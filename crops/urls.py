@@ -1,7 +1,7 @@
-# example/urls.py
+# crops/urls.py
 from django.urls import path
 
-from example.views import index
+from crops.views import index
 
 
 urlpatterns = [
