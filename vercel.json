@@ -2,7 +2,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "fincapp/wsgi.py"
+      "dest": "api/wsgi.py"
     }
   ]
 }
