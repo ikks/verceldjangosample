@@ -1,12 +1,12 @@
 {
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "api/wsgi.py"
-    },
-    {
         "src": "/favicon.ico",
         "dest": "/static/favicon.ico"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "api/wsgi.py"
     },
     {
         "src": "/static/(.*)",
