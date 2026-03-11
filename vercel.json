@@ -1,16 +1,28 @@
 {
+  "builds": [
+    {
+      "src": "api/wsgi",
+      "use": "@vercel/python",
+      "config":
+      {
+        "maxLambdaSize": "15mb",
+        "runtime": "python3.14",
+        "buildCommand": "bash setup.sh"
+      }
+    }
+  ],
   "routes": [
     {
-        "src": "/favicon.ico",
-        "dest": "/static/favicon.ico"
+      "src": "/favicon.ico",
+      "dest": "/staticfiles/favicon.ico"
+    },
+    {
+      "src": "/static/(.*)",
+      "dest": "/staticfiles/$1"
     },
     {
       "src": "/(.*)",
       "dest": "api/wsgi.py"
-    },
-    {
-        "src": "/static/(.*)",
-        "dest": "/static/$1"
     }
   ]
 }
