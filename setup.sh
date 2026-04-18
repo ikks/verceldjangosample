@@ -1,3 +1,4 @@
+ls -al
 uv pip install -r requirements.txt
 
 #python manage.py migrate
