@@ -1,5 +1,5 @@
-ls -la ..
-uv -p python3.14 pip install -r requirements.txt
+ls -la ../.local/
+pip install -r requirements.txt
 
 #python manage.py migrate
 #python manage.py collectstatic
